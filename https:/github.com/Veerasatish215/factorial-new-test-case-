@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int a,l;
+	unsigned long long fact=1;
+	printf("enter a number=");
+	scanf("%d",&a);
+	if(a>0)
+	{
+	if(a<0)
+	{
+		printf("enter a valid number");
+	}
+	else
+	{
+		for(l=1;l<=a;++l)
+		{
+			fact*=l;
+		}
+		printf("factorial of %d = %llu",a,fact);
+	}
+	}
+	else
+	{
+		printf("enter a valid number");
+	}
+	return 0;
+}
